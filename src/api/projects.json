@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "title": "Budget Tracking Tool",
+            "descr": "An Angular and SpringBoot tool useful to track expenses and incomes. ",
+            "image": "btt.jpg",
+            "link": "https://www.google.com"
+        },
+        {
+            "title": "Netflix",
+            "descr": "Everyone know what Netflix is. ",
+            "image": "netflix.jpg",
+            "link": "https://www.netflix.com"
+        }
+    ]
+}
