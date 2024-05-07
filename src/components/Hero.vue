@@ -1,4 +1,12 @@
 <script setup lang="ts">
+    const downloadResume = () => {
+        const link = document.createElement('a');
+        link.href = '../assets/cv.pdf';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 </script>
 
 <template>
@@ -13,7 +21,7 @@
 
                 <p>This site previews a selected sample of my professional work. For full projects, feel free to contact me at <a href="https://mermec-engineering.com/" target="_blank" class="light-purple dark:dark-purple font-bold">hello@VannyFasanelli.com</a>.</p>
 
-                <button class="w-3/12 mt-5 dark:bg-white">Get my resume</button>
+                <button class="w-3/12 mt-5 dark:bg-white" @click="downloadResume()">Get my resume</button>
             </div>
         </div>
                 

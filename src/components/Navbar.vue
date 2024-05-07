@@ -19,7 +19,7 @@ import { ref } from 'vue';
         const element: any = document.getElementById(selector);
         
         if(element)
-            element.scrollIntoView();
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 </script>
 
@@ -28,6 +28,7 @@ import { ref } from 'vue';
         <a class="vanny-fasanelli w-80 z-40">Vanny Fasanelli</a>
         <nav class="top-0 w-full relative z-40">
             <ul class="flex justify-end z-40">
+                <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('experience-container')">Experiences</a></li>
                 <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('skills-container')">Skills</a></li>
                 <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('projects-container')">Projects</a></li>
                 <li><a href="#about" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('about-container')">About me</a></li>

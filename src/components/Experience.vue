@@ -3,7 +3,7 @@ import { experiences } from '../api/experiences.json'
 </script>
 
 <template>
-    <div id="projects-container" class="w-full h-full animations relative">
+    <div id="experience-container" class="w-full h-full animations relative">
         <div class="w-full text-right relative mb-10"> 
             <span class="text-5xl font-bold inline text-purple-400">Expe</span>
             <span class="text-5xl font-bold inline">rience.</span>
