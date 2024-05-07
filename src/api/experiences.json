@@ -1,0 +1,12 @@
+{
+    "experiences": [
+        {
+            "title": "Mermec Engineering",
+            "descr": "I've built reliable web applications mainly throughout the framework Angular (mostly 2+). During this experience i've had the chance to develop my knowledge of WebGis architectures and i've became fluent writing programming languages such as TypeScript and Javascript, extremely confident with HTML and CSS and passionate about libraries such as Openlayers. At the same time, i took the first steps towards Backend architectures, such as Node, and juggled with Postgres and SQL language.",
+            "image": "no-photo.png",
+            "link":  "https://mermec-engineering.com/",
+            "start": "2021",
+            "end": ""
+        }
+    ]
+}

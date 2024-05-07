@@ -3,18 +3,39 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
+  background-color: #f2f2f2;
+  background-size: 20px 20px;
+  background-image:  repeating-linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1px, #f2f2f2 1px, #f2f2f2);
+  
+  color: black;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  a {
+    color: black
+  }
+
+  &.dark {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    background-image: repeating-linear-gradient(to right, #242424, #242424 1px, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.5));
+
+    a {
+      color: rgba(255, 255, 255, 0.87);
+    }
+
+    button {
+      background-color: #1a1a1a;
+    }
+  }
 }
 
 a {
@@ -46,12 +67,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, color 0.25s;
 }
+
 button:hover {
-   @apply text-purple-500
+   @apply text-purple-500;
+   @apply border-purple-400;
 }
 button:focus,
 button:focus-visible {
@@ -78,6 +101,34 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+.vanny-fasanelli {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+  cursor: default;
+}
+
+.icon {
+  scale: 1.5;
+  width: 30px;
+  opacity: 0.75;
+  cursor: pointer;
+  @apply text-purple-400 !important;
+  transition: color 0.25s;
+
+  &:hover {
+    opacity: 1;
+    @apply text-purple-600 !important;
   }
 }
 
@@ -115,19 +166,22 @@ button:focus-visible {
   width: 100%;
 }
 
-.text-hover:hover {
-  -webkit-animation: paint 0.5s forwards;
-  -webkit-animation-delay: 0s;
-  animation: paint 0.5s forwards;
-  animation-delay: 0s; 
+.light-purple {
+  @apply text-purple-400 !important;
+  transition: color 0.25s;
+
+  &:hover {
+    @apply text-purple-600 !important;
+  }
 }
 
-@-webkit-keyframes paint {
-  0% {     @apply text-purple-200; }
-  100% {     @apply text-purple-500; }
+.dark-purple {
+  @apply text-purple-200 !important;
+  transition: color 0.25s;
+
+  &:hover {
+    @apply text-purple-400 !important;
+  }
 }
 
-@keyframes paint {
-  0% {     @apply text-purple-200; }
-  100% {     @apply text-purple-500; }
-}
+
