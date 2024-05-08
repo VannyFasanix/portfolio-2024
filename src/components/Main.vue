@@ -8,7 +8,7 @@ import Experience from './Experience.vue';
 </script>
 
 <template>
-    <div class="h-screen flex flex-col items-center" style="width: 55vw">
+    <div class="h-screen flex flex-col items-center custom-width">
         <div class="w-full">
             <Navbar/>
         </div>
@@ -34,4 +34,17 @@ import Experience from './Experience.vue';
 </template>
 
 <style scoped>
+@media (min-width: 1024px) {
+    /* Schermi grandi */
+    .custom-width {
+      width: 55vw;
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    /* Schermi medi e piccoli */
+    .custom-width {
+      width: 85vw;
+    }
+  }
 </style>
