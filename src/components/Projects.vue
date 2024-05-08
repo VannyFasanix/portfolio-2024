@@ -7,13 +7,13 @@ const getImage = (img: string) => {
 
 <template>
     <div id="projects-container" class="w-full h-full animations relative">
-        <div class="w-full text-right relative mb-10"> 
+        <div class="w-full text-center lg:text-right relative mb-10"> 
             <span class="text-5xl font-bold inline text-purple-400">Pro</span>
             <span class="text-5xl font-bold inline">jects.</span>
         </div>
         <div v-for="proj in projects" class="flex flex-col">
-            <div class="mt-3 flex flex-row gap-5 items-center">
-                <a :href="proj.link" target="_blank"><img class="max-w-xl h-80 rounded" :src="getImage(proj.image)"></a>
+            <div class="mt-3 flex flex-col sm:flex-row gap-5 items-center">
+                <a :href="proj.link" target="_blank"><img class="max-w-sm lg:max-w-xl h-1/2 lg:h-80 rounded" :src="getImage(proj.image)"></a>
                 <div class="flex flex-col text-left">
                     <a :href="proj.link" target="_blank" class="light-purple dark:dark-purple font-bold">{{ proj.title }}</a>
                     <p>{{proj.descr}}</p>

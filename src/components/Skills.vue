@@ -4,14 +4,14 @@
 
 <template>
     <div id="skills-container" class="relative animations w-full h-full opacity-90 flex flex-col justify-center items-center">
-        <div class="w-full text-left">
+        <div class="w-full text-center lg:text-left">
             <span class="text-5xl font-bold inline">Ski</span>
             <span class="text-5xl font-bold inline text-purple-400">lls.</span>
         </div>
         <div class="flex flex-col text-left mt-10 gap-5">
             <div class="flex flex-col">
                 <p class="text-3xl text-left">Front End</p>
-                <div class="indent-0 flex flex-row gap-4 text-xl">
+                <div class="indent-0 flex flex-col sm:flex-row gap-4 text-xl">
                     <button class="mt-5 dark:bg-white cursor-default">HTML</button>
                     <button class="mt-5 dark:bg-white cursor-default">Javascript</button>
                     <button class="mt-5 dark:bg-white cursor-default">Typescript</button>
@@ -22,7 +22,7 @@
 
             <div class="flex flex-col">
                 <p class="text-3xl text-left">Styling & Design</p>
-                <div class="indent-0 flex flex-row gap-4 text-xl">
+                <div class="indent-0 flex flex-col sm:flex-row gap-4 text-xl">
                     <button class="mt-5 dark:bg-white cursor-default">CSS</button>
                     <button class="mt-5 dark:bg-white cursor-default">SCSS</button>
                     <button class="mt-5 dark:bg-white cursor-default">SASS</button>
@@ -34,7 +34,7 @@
 
             <div class="flex flex-col">
                 <p class="text-3xl text-left">Back End</p>
-                <div class="indent-0 flex flex-row gap-4 text-xl">
+                <div class="indent-0 flex flex-col sm:flex-row gap-4 text-xl">
                     <button class="mt-5 dark:bg-white cursor-default">NodeJS</button>
                     <button class="mt-5 dark:bg-white cursor-default">ExpressJS</button>
                     <button class="mt-5 dark:bg-white cursor-default">Spring Boot</button>
@@ -43,7 +43,7 @@
 
             <div class="flex flex-col">
                 <p class="text-3xl text-left">Miscellaneous</p>
-                <div class="indent-0 flex flex-row gap-4 text-xl">
+                <div class="indent-0 flex flex-col sm:flex-row gap-4 text-xl">
                     <button class="mt-5 dark:bg-white cursor-default">Git</button>
                     <button class="mt-5 dark:bg-white cursor-default">SQL</button>
                     <button class="mt-5 dark:bg-white cursor-default">Svn</button>

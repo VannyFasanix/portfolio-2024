@@ -13,20 +13,20 @@
 <template>
     <div class="relative animations w-full h-full">
         <div class="relative animations w-full h-5/6 opacity-90 pt-28 flex flex-col justify-center items-center">
-            <div class="w-full text-left">
+            <div class="w-full text-center lg:text-left">
                 <span class="text-5xl font-bold inline">Wel</span>
                 <span class="text-5xl font-bold inline text-purple-400">come.</span>
             </div>
-            <div class="ml-24 mr-24 mt-12 indent-0 text-left flex flex-col gap-4 text-xl">
+            <div class="mt-12 indent-0 text-left flex flex-col gap-4 text-xl items-center md:items-start">
                 <p>I'm Vanny, a software developer at <a href="https://mermec-engineering.com/" target="_blank" class="light-purple dark:dark-purple font-bold">Mermec Engineering</a> that loves crafting thoughtful and accessible experiences for all.</p>
 
                 <p>This site previews a selected sample of my professional work. For full projects, feel free to contact me at <a href="mailto:hello@VannyFasanelli.com" target="_blank" class="light-purple dark:dark-purple font-bold">hello@VannyFasanelli.com</a>.</p>
 
-                <button class="w-3/12 mt-5 dark:bg-white" @click="downloadResume()">Get my resume</button>
+                <button class="w-56 mt-5 dark:bg-white" @click="downloadResume()">Get my resume</button>
             </div>
         </div>
                 
-        <div class="flex flex-col gap-2 items-center justify-center">
+        <div class="gap-2 items-center justify-center hidden lg:flex lg:flex-col">
             <svg width="30px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
                 <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke-width:20px;" class="stroke-purple-400"/>
                 <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill:none;stroke-width:20px;" class="stroke-purple-400"/>

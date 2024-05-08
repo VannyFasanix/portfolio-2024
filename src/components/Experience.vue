@@ -4,13 +4,13 @@ import { experiences } from '../api/experiences.json'
 
 <template>
     <div id="experience-container" class="w-full h-full animations relative">
-        <div class="w-full text-right relative mb-10"> 
+        <div class="w-full text-center lg:text-right relative mb-10"> 
             <span class="text-5xl font-bold inline text-purple-400">Expe</span>
             <span class="text-5xl font-bold inline">rience.</span>
         </div>
 
         <div class="flex flex-col items-left justify-start w-full">
-            <div v-for="exp in experiences" class="w-full flex flex-row gap-3">
+            <div v-for="exp in experiences" class="w-full flex flex-col sm:flex-row gap-3">
                 <div class="w-1/6 text-3xl flex justify-center items-center">{{exp.start}} - {{exp.end}}</div>
 
                 <div class="w-1/12 border-l-purple-400 border-l-2" style="transition: border 0.25s">

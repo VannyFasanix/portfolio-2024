@@ -3,11 +3,11 @@
 
 <template>
     <div id="about-container" class="relative animations w-full h-full opacity-90 pt-28 flex flex-col justify-center items-center">
-        <div class="w-full text-left">
+        <div class="w-full text-center lg:text-left">
             <span class="text-5xl font-bold inline">Ab</span>
             <span class="text-5xl font-bold inline text-purple-400">out.</span>
         </div>
-        <div class="ml-24 mr-24 mt-12 indent-0 text-left flex flex-row gap-10 text-xl justify-between">
+        <div class="mt-12 indent-0 text-left flex flex-col sm:flex-row gap-10 text-xl justify-between">
             <div class="flex flex-col">
                 <p>I'm Vanny, a software developer at <a href="https://mermec-engineering.com/" target="_blank" class="light-purple dark:dark-purple font-bold">Mermec Engineering</a> that loves crafting thoughtful and accessible experiences for all.</p>
 
