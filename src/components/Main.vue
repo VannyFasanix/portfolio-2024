@@ -8,11 +8,11 @@ import Experience from './Experience.vue';
 </script>
 
 <template>
-    <div class="h-screen" style="width: 1080px">
-        <div class="h-10 p-1">
+    <div class="h-screen flex flex-col items-center" style="width: 55vw">
+        <div class="h-10 p-1 w-full">
             <Navbar/>
         </div>
-        <div class="h-full p-1">
+        <div class="min-h-screen w-full p-1">
             <Hero/>
         </div>
         <div class="p-1">
