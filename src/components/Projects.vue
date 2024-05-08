@@ -13,7 +13,7 @@ const getImage = (img: string) => {
         </div>
         <div v-for="proj in projects" class="flex flex-col">
             <div class="mt-3 flex flex-col sm:flex-row gap-5 items-center">
-                <a :href="proj.link" target="_blank"><img class="max-w-sm lg:max-w-xl h-1/2 lg:h-80 rounded" :src="getImage(proj.image)"></a>
+                <a :href="proj.link" target="_blank"><img class="max-w-full lg:max-w-xl h-1/2 lg:h-80 rounded" :src="getImage(proj.image)"></a>
                 <div class="flex flex-col text-left">
                     <a :href="proj.link" target="_blank" class="light-purple dark:dark-purple font-bold">{{ proj.title }}</a>
                     <p>{{proj.descr}}</p>

@@ -41,7 +41,7 @@
                 <p class="mt-12">This site was hand-built with Vue.js, TailwindJS, and plenty of 🍵.</p>
             </div>
            
-            <img class="rounded" style="height: 430px" src="../assets/vanny.jpg"/>
+            <img class="rounded" style="max-height: 430px" src="../assets/vanny.jpg"/>
         </div>
     </div>
 </template>
