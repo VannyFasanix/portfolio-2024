@@ -19,7 +19,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* overflow-x: hidden;  Da capire il comportamento su cellulare di overflow x */
+  overflow-x: hidden;
 
   a {
     color: black
