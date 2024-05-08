@@ -25,7 +25,7 @@ import { ref } from 'vue';
 
 <template>
     <div class="fixed animations flex flex-row gap-72 z-40">
-        <a class="vanny-fasanelli w-60 z-40 text-left">Vanny Fasanelli</a>
+        <a class="vanny-fasanelli w-60 z-40">Vanny Fasanelli</a>
         <nav class="top-0 w-full relative z-40">
             <ul class="flex z-40">
                 <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('experience-container')">Experiences</a></li>
