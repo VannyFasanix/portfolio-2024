@@ -49,10 +49,20 @@
 <style scoped>
 .animations {
     opacity: 0;
-    -webkit-animation: fade-in 1s  forwards;
+    -webkit-animation: slide 1s, fade-in 1s  forwards;
     -webkit-animation-delay: 2s;
-    animation: fade-in 1s forwards;
+    animation: slide 1s, fade-in 1s forwards;
     animation-delay: 2.5s;
+}
+
+@-webkit-keyframes slide {
+    0% { right: -100px; }
+    100% { right: 0; }
+}
+
+@keyframes slide {
+    0% { right: -100px; }
+    100% { right: 0; }
 }
 
 @-webkit-keyframes fade-in {
