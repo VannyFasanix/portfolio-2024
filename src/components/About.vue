@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div id="about-container" class="relative animations w-full h-full opacity-90 pt-28 flex flex-col justify-center items-center">
+    <div id="about-container" class="relative animations w-full h-full opacity-90 pt-28 flex flex-col justify-center items-center overflow-x-hidden">
         <div class="w-full text-center lg:text-left">
             <span class="text-5xl font-bold inline">Ab</span>
             <span class="text-5xl font-bold inline text-purple-400">out.</span>
