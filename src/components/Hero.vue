@@ -1,8 +1,9 @@
 <script setup lang="ts">
     const downloadResume = () => {
         const link = document.createElement('a');
-        link.href = '../assets/cv.pdf';
+        link.href = `/files/cv.pdf`;
         link.target = '_blank';
+        link.style.display = 'none';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -19,7 +20,7 @@
             <div class="ml-24 mr-24 mt-12 indent-0 text-left flex flex-col gap-4 text-xl">
                 <p>I'm Vanny, a software developer at <a href="https://mermec-engineering.com/" target="_blank" class="light-purple dark:dark-purple font-bold">Mermec Engineering</a> that loves crafting thoughtful and accessible experiences for all.</p>
 
-                <p>This site previews a selected sample of my professional work. For full projects, feel free to contact me at <a href="https://mermec-engineering.com/" target="_blank" class="light-purple dark:dark-purple font-bold">hello@VannyFasanelli.com</a>.</p>
+                <p>This site previews a selected sample of my professional work. For full projects, feel free to contact me at <a href="mailto:hello@VannyFasanelli.com" target="_blank" class="light-purple dark:dark-purple font-bold">hello@VannyFasanelli.com</a>.</p>
 
                 <button class="w-3/12 mt-5 dark:bg-white" @click="downloadResume()">Get my resume</button>
             </div>
