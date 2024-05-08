@@ -8,23 +8,23 @@ import Experience from './Experience.vue';
 </script>
 
 <template>
-    <div class="w-full h-screen">
-        <div class="h-10 p-1" style="width: 1080px">
+    <div class="h-screen" style="width: 1080px">
+        <div class="h-10 p-1">
             <Navbar/>
         </div>
-        <div class="h-full p-1" style="width: 1080px">
+        <div class="h-full p-1">
             <Hero/>
         </div>
-        <div class="p-1" style="width: 1080px">
+        <div class="p-1">
             <Experience/>
         </div>
-        <div class="mt-32 p-1" style="width: 1080px">
+        <div class="mt-32 p-1">
             <Skills/>
         </div>
-        <div class="mt-32 p-1" style="width: 1080px">
+        <div class="mt-32 p-1">
             <Projects/>
         </div>
-        <div class="mt-12 p-1" style="width: 1080px">
+        <div class="mt-12 p-1">
             <About/>
         </div>
         <div class="h-32 flex justify-center items-center relative">
