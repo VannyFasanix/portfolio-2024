@@ -23,12 +23,7 @@ import { ref } from 'vue';
         
         setTimeout(() => {
             if(element)
-                window.scrollTo({
-                    behavior: 'smooth',
-                    top: element.getBoundingClientRect().top -
-                    document.body.getBoundingClientRect().top -
-                    50,
-                })
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 200)
 
     }
