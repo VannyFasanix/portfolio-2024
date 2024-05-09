@@ -78,11 +78,9 @@ import { ref } from 'vue';
 <style scoped>
 
 .custom-nav {
-    @apply bg-white !important;
     border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
 
     .dark & {
-        @apply bg-black !important;
         border-bottom: rgba(255, 255, 255, 0.5) 1px solid
     }
 }
