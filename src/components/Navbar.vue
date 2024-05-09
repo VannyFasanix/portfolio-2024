@@ -23,7 +23,12 @@ import { ref } from 'vue';
         
         setTimeout(() => {
             if(element)
-                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                window.scrollTo({
+                    behavior: 'smooth',
+                    top: element.getBoundingClientRect().top -
+                    document.body.getBoundingClientRect().top -
+                    50,
+                })
         }, 200)
 
     }
@@ -57,7 +62,7 @@ import { ref } from 'vue';
                     <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('skills-container'), closeNavDropdown()">Skills</a></li>
                     <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('projects-container'), closeNavDropdown()">Projects</a></li>
                     <li><a href="#about" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('about-container'), closeNavDropdown()">About me</a></li>
-                    <li><a class="nav-link nav-link-ltr text-white px-4 py-2 cursor-pointer" @click="changeTheme(), closeNavDropdown()">{{theme}} theme</a></li>
+                    <li><a class="nav-link nav-link-ltr text-white px-4 py-2 cursor-pointer" @click="changeTheme()">{{theme}} theme</a></li>
                 </ul>
             </nav>
         </div>

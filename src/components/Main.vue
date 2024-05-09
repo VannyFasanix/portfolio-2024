@@ -17,7 +17,7 @@ const onOpenDetail = (proj: any) => {
     const element: any = document.getElementById('hero-container');
     
     if(element)
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
     setTimeout(() => (selProject.value = proj, showDetail.value = true), 200)
 }

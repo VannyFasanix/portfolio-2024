@@ -1,15 +1,7 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 + TypeScript + Vite Portfolio by Vanny Fasanelli
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<h1><img align="left" src="public/vite.svg" width="170" /><br />Domy.sh Website</h1>
 
-## Recommended Setup
+I'm Vanny, a software developer at Mermec Engineering that loves crafting thoughtful and accessible experiences for all.
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
-
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
-
-
-Link utili
-https://robbeyorth.com/
-https://mau.vision/
-https://m7mad.dev/
+This [portfolio](portfolio-2024-liard-two.vercel.app) previews a selected sample of my professional work. For full projects, feel free to contact me at hello@VannyFasanelli.com.
