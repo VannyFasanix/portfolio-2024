@@ -1,31 +1,43 @@
 {
-    "skills": {
-        "fe": [
-            "HTML",
-            "Javascript",
-            "Typescript",
-            "Angular",
-            "Vue"
-        ],
-        "sd": [
-            "CSS",
-            "SCSS",
-            "SASS",
-            "TailwindCSS",
-            "Bootstrap",
-            "Material"
-        ],
-        "be": [
-            "NodeJS",
-            "ExpressJS",
-            "Spring Boot"
-        ],
-        "misc": [
-            "Git",
-            "SQL",
-            "Svn",
-            "Openlayers",
-            "Geoserver"
-        ]
-    }
+    "skills": [
+        {
+            "name": "Front End",
+            "list": [
+                "HTML",
+                "Javascript",
+                "Typescript",
+                "Angular",
+                "Vue"
+            ]
+        },
+        {
+            "name": "Styling & Design",
+            "list": [
+                "CSS",
+                "SCSS",
+                "SASS",
+                "TailwindCSS",
+                "Bootstrap",
+                "Material"
+            ]
+        },
+        {
+            "name": "Back End",
+            "list": [
+                "NodeJS",
+                "ExpressJS",
+                "Spring Boot"
+            ]
+        },
+        {
+            "name": "Miscellaneous",
+            "list": [
+                "Git",
+                "SQL",
+                "Svn",
+                "Openlayers",
+                "Geoserver"
+            ]
+        }
+    ]
 }

@@ -11,11 +11,11 @@
 </script>
 
 <template>
-    <div class="relative animations w-full h-full">
+    <div id="hero-container" class="relative animations w-full h-full">
         <div class="relative animations w-full h-5/6 opacity-90 pt-28 flex flex-col justify-center items-center">
             <div class="w-full text-center lg:text-left">
-                <span class="text-5xl font-bold inline">Wel</span>
-                <span class="text-5xl font-bold inline text-purple-400">come.</span>
+                <span class="text-5xl font-bold inline">— Wel</span>
+                <span class="text-5xl font-bold inline text-purple-400">come</span>
             </div>
             <div class="mt-12 indent-0 text-left flex flex-col gap-4 text-xl items-center md:items-start">
                 <p>I'm Vanny, a software developer at <a href="https://mermec-engineering.com/" target="_blank" class="light-purple dark:dark-purple font-bold">Mermec Engineering</a> that loves crafting thoughtful and accessible experiences for all.</p>

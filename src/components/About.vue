@@ -4,8 +4,8 @@
 <template>
     <div id="about-container" class="relative animations w-full h-full opacity-90 pt-28 flex flex-col justify-center items-center overflow-x-hidden">
         <div class="w-full text-center lg:text-left">
-            <span class="text-5xl font-bold inline">Ab</span>
-            <span class="text-5xl font-bold inline text-purple-400">out.</span>
+            <span class="text-5xl font-bold inline">— Ab</span>
+            <span class="text-5xl font-bold inline text-purple-400">out</span>
         </div>
         <div class="mt-12 indent-0 text-left flex flex-col sm:flex-row gap-10 text-xl justify-between">
             <div class="flex flex-col">
@@ -41,7 +41,7 @@
                 <p class="mt-12">This site was hand-built with Vue.js, TailwindJS, and plenty of 🍵.</p>
             </div>
            
-            <img class="rounded" style="max-height: 430px" src="../assets/vanny.jpg"/>
+            <img class="rounded" style="max-height: 430px; width: auto" src="../assets/vanny.jpg"/>
         </div>
     </div>
 </template>

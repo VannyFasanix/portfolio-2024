@@ -25,7 +25,8 @@ import { ref } from 'vue';
 
 <template>
     <div class="fixed block left-0 md:flex md:flex-row animations w-full max-w-full z-40 justify-center">
-        <a class="vanny-fasanelli w-1/5 z-40 hidden 2xl:inline-block text-left">Vanny Fasanelli</a>
+        <a href="#hero" class="nav-link nav-link-ltr z-40 !hidden 2xl:!inline-block text-left cursor-pointer" @click="scrollTo('hero-container')">Vanny Fasanelli</a>
+        <div class="w-1/6 !hidden 2xl:!inline-block"></div>
 
         <div class="w-full md:hidden bt-custom-nav dark:bt-custom-nav-dark custom-nav">
             <input type="checkbox" id="menu-toggle" class="hidden">

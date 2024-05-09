@@ -5,35 +5,14 @@ import { skills } from "../api/skills.json";
 <template>
     <div id="skills-container" class="relative animations w-full h-full opacity-90 flex flex-col justify-center items-center">
         <div class="w-full text-center lg:text-left">
-            <span class="text-5xl font-bold inline">Ski</span>
-            <span class="text-5xl font-bold inline text-purple-400">lls.</span>
+            <span class="text-5xl font-bold inline">— Ski</span>
+            <span class="text-5xl font-bold inline text-purple-400">lls</span>
         </div>
         <div class="flex flex-col text-left mt-10 gap-5">
-            <div class="flex flex-col">
-                <p class="text-3xl text-left">Front End</p>
-                <div class="indent-0 flex flex-col sm:flex-row gap-4 text-xl">
-                    <button v-for="fe in skills.fe" class="mt-5 dark:bg-white cursor-default">{{fe}}</button>
-                </div>
-            </div>
-
-            <div class="flex flex-col">
-                <p class="text-3xl text-left">Styling & Design</p>
-                <div class="indent-0 flex flex-col sm:flex-row gap-4 text-xl">
-                    <button v-for="fe in skills.sd" class="mt-5 dark:bg-white cursor-default">{{fe}}</button>
-                </div>
-            </div>
-
-            <div class="flex flex-col">
-                <p class="text-3xl text-left">Back End</p>
-                <div class="indent-0 flex flex-col sm:flex-row gap-4 text-xl">
-                    <button v-for="fe in skills.be" class="mt-5 dark:bg-white cursor-default">{{fe}}</button>
-                </div>
-            </div>
-
-            <div class="flex flex-col">
-                <p class="text-3xl text-left">Miscellaneous</p>
-                <div class="indent-0 flex flex-col sm:flex-row gap-4 text-xl">
-                    <button v-for="fe in skills.misc" class="mt-5 dark:bg-white cursor-default">{{fe}}</button>
+            <div v-for="(skill, index) in skills" class="flex flex-col">
+                <p class="text-3xl text-center md:text-left">{{skill.name}}</p>
+                <div class="indent-0 flex flex-col sm:flex-wrap lg:flex-row gap-4 text-xl">
+                    <button v-for="s in skills[index].list" class="mt-5 dark:bg-white cursor-default">{{s}}</button>
                 </div>
             </div>
         </div>
