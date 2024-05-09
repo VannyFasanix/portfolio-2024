@@ -27,12 +27,12 @@ import { ref } from 'vue';
     <div class="fixed block left-0 md:flex md:flex-row animations w-full max-w-full z-40 justify-center">
         <a class="vanny-fasanelli w-1/5 z-40 hidden 2xl:inline-block text-left">Vanny Fasanelli</a>
 
-        <div class="w-full md:hidden bt-custom-nav border-b-white dark:bt-custom-nav-dark bg-white dark:bg-black">
+        <div class="w-full md:hidden bt-custom-nav dark:bt-custom-nav-dark custom-nav">
             <input type="checkbox" id="menu-toggle" class="hidden">
             <label for="menu-toggle" class="hamburger-icon">
-                <span class="bg-black dark:bg-white"></span>
-                <span class="bg-black dark:bg-white"></span>
-                <span class="bg-black dark:bg-white"></span>
+                <span class="bg-span-hamburger"></span>
+                <span class="bg-span-hamburger"></span>
+                <span class="bg-span-hamburger"></span>
             </label>
  
             <nav class="top-0 w-full relative z-40">
@@ -61,6 +61,24 @@ import { ref } from 'vue';
 
 <style scoped>
 
+.custom-nav {
+    @apply bg-white !important;
+    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+
+    .dark & {
+        @apply bg-black !important;
+        border-bottom: rgba(255, 255, 255, 0.5) 1px solid
+    }
+}
+
+.bg-span-hamburger {
+    @apply bg-black !important;
+
+    .dark & {
+        @apply bg-white !important;
+    }
+}
+
 .hamburger-icon {
 display: inline-block;
 cursor: pointer;
@@ -87,16 +105,6 @@ transform: rotate(-45deg) translate(5px, -5px);
 #menu-toggle:not(:checked) ~ nav {
 display: none;
 }
-
-.bt-custom-nav {
-   border-bottom: rgba(0, 0, 0, 0.1) 1px solid
-}
-
-
-.bt-custom-nav-dark {
-    border-bottom: rgba(255, 255, 255, 0.5) 1px solid
- }
- 
 
 .bg-custom-nav {
    background-color: #eee;
