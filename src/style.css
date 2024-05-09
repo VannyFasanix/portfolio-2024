@@ -186,3 +186,22 @@ button:focus-visible {
   }
 }
 
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-400 !important;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-500 !important;
+}
