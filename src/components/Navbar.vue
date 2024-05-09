@@ -27,6 +27,15 @@ import { ref } from 'vue';
         }, 200)
 
     }
+
+    const closeNavDropdown = () => {
+        
+        const menuToggle: any = document.getElementById('menu-toggle');
+
+        if (menuToggle && menuToggle?.checked) {
+            menuToggle.checked = false;
+        }
+    }
 </script>
 
 <template>
@@ -44,11 +53,11 @@ import { ref } from 'vue';
  
             <nav class="top-0 w-full relative z-40">
                 <ul class="flex flex-col items-center z-40">
-                    <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('experience-container')">Experiences</a></li>
-                    <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('skills-container')">Skills</a></li>
-                    <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('projects-container')">Projects</a></li>
-                    <li><a href="#about" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('about-container')">About me</a></li>
-                    <li><a class="nav-link nav-link-ltr text-white px-4 py-2 cursor-pointer" @click="changeTheme()">{{theme}} theme</a></li>
+                    <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('experience-container'), closeNavDropdown()">Experiences</a></li>
+                    <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('skills-container'), closeNavDropdown()">Skills</a></li>
+                    <li><a href="#projects" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('projects-container'), closeNavDropdown()">Projects</a></li>
+                    <li><a href="#about" class="nav-link nav-link-ltr text-white px-4 py-2" @click="scrollTo('about-container'), closeNavDropdown()">About me</a></li>
+                    <li><a class="nav-link nav-link-ltr text-white px-4 py-2 cursor-pointer" @click="changeTheme(), closeNavDropdown()">{{theme}} theme</a></li>
                 </ul>
             </nav>
         </div>
