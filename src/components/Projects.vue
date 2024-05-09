@@ -16,7 +16,7 @@ const openDetail = (proj: any) => {
     <div id="projects-container" class="w-full h-full animations relative">
         <div class="w-full text-center lg:text-right relative mb-10"> 
             <span class="text-5xl font-bold inline text-purple-400">Pro</span>
-            <span class="text-5xl font-bold inline">jects —</span>
+            <span class="text-5xl font-bold inline">jects <p class="hidden md:inline">—</p></span>
         </div>
         <div v-for="proj in projects" class="flex flex-col">
             <div class="mt-3 flex flex-col sm:flex-row gap-5 items-center">

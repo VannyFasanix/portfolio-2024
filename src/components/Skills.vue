@@ -5,7 +5,7 @@ import { skills } from "../api/skills.json";
 <template>
     <div id="skills-container" class="relative animations w-full h-full opacity-90 flex flex-col justify-center items-center">
         <div class="w-full text-center lg:text-left">
-            <span class="text-5xl font-bold inline">— Ski</span>
+            <span class="text-5xl font-bold inline"><p class="hidden md:inline">—</p> Ski</span>
             <span class="text-5xl font-bold inline text-purple-400">lls</span>
         </div>
         <div class="flex flex-col text-left mt-10 gap-5">

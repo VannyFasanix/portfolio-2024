@@ -6,7 +6,7 @@ import { experiences } from '../api/experiences.json'
     <div id="experience-container" class="w-full h-full animations relative">
         <div class="w-full text-center lg:text-right relative mb-10"> 
             <span class="text-5xl font-bold inline text-purple-400">Expe</span>
-            <span class="text-5xl font-bold inline">rience —</span>
+            <span class="text-5xl font-bold inline">rience <p class="hidden md:inline">—</p></span>
         </div>
 
         <div class="flex flex-col items-left justify-start w-full">

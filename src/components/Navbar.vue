@@ -21,13 +21,16 @@ import { ref } from 'vue';
 
         emits('goHome', true)
         
-        if(element)
-            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => {
+            if(element)
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 200)
+
     }
 </script>
 
 <template>
-    <div class="fixed block left-0 md:flex md:flex-row animations w-full max-w-full z-40 justify-center">
+    <div id="navbar-container" class="fixed block left-0 md:flex md:flex-row animations w-full max-w-full z-40 justify-center">
         <a href="#hero" class="nav-link nav-link-ltr z-40 !hidden 2xl:!inline-block text-left cursor-pointer" @click="scrollTo('hero-container')">Vanny Fasanelli</a>
         <div class="w-1/6 !hidden 2xl:!inline-block"></div>
 

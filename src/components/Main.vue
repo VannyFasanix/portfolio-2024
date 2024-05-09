@@ -10,12 +10,21 @@ import {ref} from 'vue'
 
 const selProject = ref<any>(null);
 
+const showDetail = ref<boolean>(false);
+
 const onOpenDetail = (proj: any) => {
-    selProject.value = proj;
+    showDetail.value = true
+    const element: any = document.getElementById('hero-container');
+    
+    if(element)
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    setTimeout(() => (selProject.value = proj, showDetail.value = true), 200)
 }
 
 const onGoHome = () => {
-    selProject.value = null
+    selProject.value = null;
+    showDetail.value = false
 }
 </script>
 
@@ -25,7 +34,7 @@ const onGoHome = () => {
             <Navbar :onGoHome="onGoHome"/>
         </div>
 
-        <div v-show="selProject == null" class="w-full h-full">
+        <div v-show="selProject == null && showDetail == false" class="w-full h-full">
             <div class="h-screen w-full p-1">
                 <Hero/>
             </div>
@@ -46,7 +55,7 @@ const onGoHome = () => {
             </div>
         </div>
 
-        <div v-show="selProject != null" class="w-full h-full p-1">
+        <div v-show="selProject != null && showDetail == true" class="w-full h-full p-1 justify-center flex flex-col mt-20">
             <ProjectDetail :proj="selProject"/>
 
             <div class="h-32 flex justify-center items-center relative">

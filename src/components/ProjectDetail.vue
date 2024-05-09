@@ -6,14 +6,13 @@ const props = defineProps(['proj'])
 const getImage = (img: string) => {
     return new URL(`../assets/${img}`, import.meta.url).href
 }
-
 </script>
 
 <template>
-    <div class="mt-20 relative w-full flex flex-col gap-5 justify-center items-left">
+    <div id="project-detail-container" class="relative w-full flex flex-col gap-5 justify-center items-left">
         <div class="relative animations-left flex flex-col justify-center items-left">
             <span class="text-xl font-thin text-left">{{props?.proj?.title}}</span>
-            <span class="text-2xl font-normal text-left">— {{props?.proj?.descr}}</span>
+            <span class="text-2xl font-normal text-left"><p class="hidden md:inline">—</p> {{props?.proj?.descr}}</span>
         </div>
 
         <div class="relative animations-bottom flex flex-col justify-center items-left">
