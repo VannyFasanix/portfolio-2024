@@ -10,7 +10,7 @@ const getImage = (img: string) => {
 </script>
 
 <template>
-    <div class="relative w-full h-5/6 flex flex-col gap-5 justify-center items-left">
+    <div class="mt-20 relative w-full flex flex-col gap-5 justify-center items-left">
         <div class="relative animations-left flex flex-col justify-center items-left">
             <span class="text-xl font-thin text-left">{{props?.proj?.title}}</span>
             <span class="text-2xl font-normal text-left">— {{props?.proj?.descr}}</span>
@@ -51,9 +51,9 @@ const getImage = (img: string) => {
 .animations-bottom {
     opacity: 0;
     -webkit-animation: slide-b 1s, fade-in 1s  forwards;
-    -webkit-animation-delay: 0s;
+    -webkit-animation-delay: 1s;
     animation: slide-b 1s, fade-in 1s forwards;
-    animation-delay: 0s;
+    animation-delay: 1s;
 }
 
 @-webkit-keyframes slide-b {
