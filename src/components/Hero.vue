@@ -14,7 +14,7 @@
     <div id="hero-container" class="relative animations w-full h-full">
         <div class="relative w-full h-5/6 opacity-90 pt-28 flex flex-col justify-center items-center">
             <div class="w-full text-center lg:text-left">
-                <span class="text-5xl font-bold inline"><p class="hidden md:block">—</p> Wel</span>
+                <span class="text-5xl font-bold inline"><p class="hidden md:inline">—</p> Wel</span>
                 <span class="text-5xl font-bold inline text-purple-400">come</span>
             </div>
             <div class="mt-12 indent-0 text-left flex flex-col gap-4 text-xl items-center md:items-start">
