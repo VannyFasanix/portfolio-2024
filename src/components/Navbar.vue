@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+    const emits = defineEmits(["goHome"]);
 
     let theme = ref(document.documentElement.classList.contains('dark') ? 'light' : 'dark')
 
@@ -17,6 +18,8 @@ import { ref } from 'vue';
 
     const scrollTo = (selector: string) => {
         const element: any = document.getElementById(selector);
+
+        emits('goHome', true)
         
         if(element)
             element.scrollIntoView({ behavior: 'smooth', block: 'center' });

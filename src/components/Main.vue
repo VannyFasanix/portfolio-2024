@@ -9,20 +9,20 @@ import ProjectDetail from './ProjectDetail.vue';
 import {ref} from 'vue'
 
 const selProject = ref<any>(null);
-console.log(selProject.value)
-
 
 const onOpenDetail = (proj: any) => {
-    console.log(proj)
     selProject.value = proj;
-    console.log(selProject.value)
+}
+
+const onGoHome = () => {
+    selProject.value = null
 }
 </script>
 
 <template>
     <div class="h-screen flex flex-col items-center custom-width">
         <div class="w-full">
-            <Navbar/>
+            <Navbar :onGoHome="onGoHome"/>
         </div>
 
         <div v-show="selProject == null" class="w-full h-full">
@@ -36,7 +36,6 @@ const onOpenDetail = (proj: any) => {
                 <Skills/>
             </div>
             <div class="mt-32 p-1 w-full">
-                <!-- Passa la funzione onOpenDetail come prop -->
                 <Projects :onOpenDetail="onOpenDetail"/>
             </div>
             <div class="mt-12 p-1 w-full">
