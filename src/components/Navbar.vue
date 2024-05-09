@@ -19,7 +19,7 @@ import { ref } from 'vue';
     const scrollTo = (selector: string) => {
         const element: any = document.getElementById(selector);
 
-        emits('goHome', true)
+        emits('goHome', selector)
         
         setTimeout(() => {
             if(element)

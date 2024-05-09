@@ -12,7 +12,7 @@
 
 <template>
     <div id="hero-container" class="relative animations w-full h-full">
-        <div class="relative animations w-full h-5/6 opacity-90 pt-28 flex flex-col justify-center items-center">
+        <div class="relative w-full h-5/6 opacity-90 pt-28 flex flex-col justify-center items-center">
             <div class="w-full text-center lg:text-left">
                 <span class="text-5xl font-bold inline">— Wel</span>
                 <span class="text-5xl font-bold inline text-purple-400">come</span>

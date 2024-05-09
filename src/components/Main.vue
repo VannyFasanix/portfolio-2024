@@ -25,6 +25,15 @@ const onOpenDetail = (proj: any) => {
 const onGoHome = () => {
     selProject.value = null;
     showDetail.value = false
+
+    const selector = `[id*="-container"], [class*="-container"]`;
+    
+    const elements = document.querySelectorAll(selector);
+
+    elements.forEach(element => {
+        element.classList.remove("animations");
+    });
+
 }
 </script>
 
