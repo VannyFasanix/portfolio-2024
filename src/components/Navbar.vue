@@ -79,9 +79,12 @@ import { ref } from 'vue';
 
 .custom-nav {
     border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+    background-color: #f2f2f2;
 
     .dark & {
-        border-bottom: rgba(255, 255, 255, 0.5) 1px solid
+        border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
+        background-color: #242424;
+        
     }
 }
 
