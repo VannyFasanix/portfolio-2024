@@ -78,21 +78,21 @@ import { ref } from 'vue';
 <style scoped>
 
 .custom-nav {
-    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
-    background-color: #f2f2f2;
+    border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+    background-color: rgba(242, 242, 242, 0.8);
 
     .dark & {
-        border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
-        background-color: rgba(0, 0, 0, 0.5)
+        border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
+        background-color: rgba(0, 0, 0, 0.8);
         
     }
 }
 
 .bg-span-hamburger {
-    @apply bg-black !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 
     .dark & {
-        @apply bg-white !important;
+        background-color: rgba(242, 242, 242, 0.5) !important;
     }
 }
 
