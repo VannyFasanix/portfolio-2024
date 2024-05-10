@@ -18,7 +18,10 @@ const getImage = (img: string) => {
         <div class="relative animations-bottom flex flex-col justify-center items-left">
             <span class="text-base font-medium text-left text-purple-400">Overview</span>
             <div class="flex flex-col 2xl:flex-row gap-5 justify-center items-center 2xl:items-start">
-                <p class="text-base font-normal text-left">{{props?.proj?.overview}}</p>
+                <div class="flex flex-col gap-5">
+                    <p class="text-base font-normal text-left">{{props?.proj?.overview}}</p>
+                    <a :href="props?.proj?.link" target="_blank" class="text-base font-semibold text-left !text-purple-400 hover:!text-purple-500 transition-colors">Get to the website</a>
+                </div>
                 <img class="max-w-full lg:max-w-xl h-1/2 lg:h-80 rounded" :src="getImage(props?.proj?.image)">
 
             </div>
