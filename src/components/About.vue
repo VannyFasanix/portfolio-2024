@@ -10,6 +10,8 @@
         <div class="mt-12 indent-0 text-left flex flex-col sm:flex-row gap-10 text-xl justify-between">
             <div class="flex flex-col">
                 <p>I'm Vanny, a software developer at <a href="https://mermec-engineering.com/" target="_blank" class="light-purple dark:dark-purple font-bold">Mermec Engineering</a> that loves crafting thoughtful and accessible experiences for all.</p>
+                
+                <p class="mt-5">Web developer with prior experience behid. I focus on building applications efficiently with an eye towards future sustainability and scalability.</p>
 
                 <div class="flex flex-row gap-1 mt-6">
                     <a href="mailto:hello@VannyFasanelli.com" target="_blank">

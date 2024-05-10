@@ -60,7 +60,7 @@ const onGoHome = () => {
                 <About/>
             </div>
             <div class="h-32 flex justify-center items-center relative">
-                All rights reserved 
+                <p class="font-extralight text-xs">All rights reserved 2024 @ Vanny Fasanelli</p>
             </div>
         </div>
 
@@ -68,7 +68,7 @@ const onGoHome = () => {
             <ProjectDetail :proj="selProject"/>
 
             <div class="h-32 flex justify-center items-center relative">
-                All rights reserved 
+                <p class="font-extralight text-xs">All rights reserved 2024 @ Vanny Fasanelli</p>
             </div>
         </div>
     </div>
