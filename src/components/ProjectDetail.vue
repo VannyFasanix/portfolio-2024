@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import { defineProps, ref } from 'vue';
 
 const props = defineProps(['proj'])
+const linkType = ref("website")
+
+linkType.value = props?.proj?.link?.includes('github') ? 'repository' : 'website';
 
 const getImage = (img: string) => {
     return new URL(`../assets/${img}`, import.meta.url).href
@@ -20,7 +23,7 @@ const getImage = (img: string) => {
             <div class="flex flex-col 2xl:flex-row gap-5 justify-center items-center 2xl:items-start">
                 <div class="flex flex-col gap-5">
                     <p class="text-base font-normal text-left">{{props?.proj?.overview}}</p>
-                    <a :href="props?.proj?.link" target="_blank" class="text-base font-semibold text-left !text-purple-400 hover:!text-purple-500 transition-colors">Get to the website</a>
+                    <a :href="props?.proj?.link" target="_blank" class="text-base font-semibold text-left !text-purple-400 hover:!text-purple-500 transition-colors">Get to the {{linkType}}</a>
                 </div>
                 <img class="max-w-full lg:max-w-xl h-1/2 lg:h-80 rounded" :src="getImage(props?.proj?.image)">
 

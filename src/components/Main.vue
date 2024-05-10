@@ -64,7 +64,7 @@ const onGoHome = () => {
             </div>
         </div>
 
-        <div v-show="selProject != null && showDetail == true" class="w-full h-full p-1 justify-center flex flex-col mt-20">
+        <div v-if="selProject != null && showDetail == true" class="w-full h-full p-1 justify-center flex flex-col mt-20">
             <ProjectDetail :proj="selProject"/>
 
             <div class="h-32 flex justify-center items-center relative">
