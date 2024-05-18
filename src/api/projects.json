@@ -4,7 +4,7 @@
             "title": "Budget Tracking Tool",
             "descr": "An Angular and SpringBoot tool useful to track expenses and incomes. ",
             "underdescr": "Simple, fast and intuitive application for every day expense tracking ",
-            "image": "no-photo.png",
+            "image": "github.png",
             "link": "https://github.com/VannyFasanix/budget-tracking-tool",
             "overview": "Tracking everything in a day to day life could be tiring. You gave a chance to excel sheets but you found them difficult and incomprehensible, so you decided to gave up and now you're wondering where did your money go. That's why i've built BTT, a UX friendly application where you can easily track everything you need without wasting time trying to working anything out of these complex alternatives. Check it out!"
         }
