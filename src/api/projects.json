@@ -7,6 +7,14 @@
             "image": "github.png",
             "link": "https://github.com/VannyFasanix/budget-tracking-tool",
             "overview": "Tracking everything in a day to day life could be tiring. You gave a chance to excel sheets but you found them difficult and incomprehensible, so you decided to gave up and now you're wondering where did your money go. That's why i've built BTT, a UX friendly application where you can easily track everything you need without wasting time trying to working anything out of these complex alternatives. Check it out!"
+        },
+        {
+            "title": "Flashlearn",
+            "descr": "A Nuxt.js flashcards app",
+            "underdescr": "Flashcards application made for testing Nuxt.js",
+            "image": "nuxt.jpg",
+            "link": "https://github.com/VannyFasanix/flashlearn",
+            "overview": "Project build with the mere prupose of testing Nuxt.js technology. Work in progress but meanwhile.. Check it out!"
         }
     ]
 }

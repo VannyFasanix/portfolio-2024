@@ -18,10 +18,10 @@ const openDetail = (proj: any) => {
             <span class="text-5xl font-bold inline text-purple-400">Pro</span>
             <span class="text-5xl font-bold inline">jects <p class="hidden md:inline">—</p></span>
         </div>
-        <div v-for="proj in projects" class="flex flex-col">
-            <div class="mt-3 flex flex-col sm:flex-row gap-5 items-center">
-                <a class="cursor-pointer"><img class="max-w-full lg:max-w-xl h-1/2 lg:h-80 rounded" :src="getImage(proj.image)" @click="openDetail(proj)"></a>
-                <div class="flex flex-col text-left">
+        <div v-for="proj in projects" class="w-full flex flex-col">
+            <div class="mt-3 w-full flex flex-col sm:flex-row gap-5 items-center">
+                <a class="w-full lg:w-1/2 cursor-pointer"><img class="max-w-full min-w-full lg:h-80 rounded" :src="getImage(proj.image)" @click="openDetail(proj)"></a>
+                <div class="w-full lg:w-1/2 flex flex-col text-left">
                     <a class="light-purple dark:dark-purple font-bold cursor-pointer" @click="openDetail(proj)">{{ proj.title }}</a>
                     <p>{{proj.descr}}</p>
                 </div>
